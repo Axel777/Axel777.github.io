@@ -1,0 +1,67 @@
+body{
+    min-height: 100%;
+    transition: background 0.5s;
+  }
+  
+  .text{
+    font-family: 'Sacramento', cursive;
+    font-size: 10vh;
+    text-align:center;
+  }
+  
+  svg{
+    position:absolute;
+    fill: transparent;
+    stroke:black;
+    stroke-width:5;
+    height: 50vh;
+    width: 75vh;
+  }
+  
+  .cake{
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  
+  .balloon{
+    bottom: 25vh;
+    width:30vh;
+    height: 400px;
+    animation: float 5s infinite;
+  }
+  
+  #balloon1{
+    left:0;
+    right:100vh;
+  }
+  
+  #balloon2{
+    right:0vh;
+
+  }
+  
+  @keyframes float{
+    50%{
+      transform: translate(0vh, 10vh);
+    }
+  }
+  
+  .confetti{
+    height:80vh;
+    width:95vh;
+    margin:0 auto;
+    left:0;
+    right:0;
+  }
+  
+  .conf{
+    animation: fall;
+  }
+  
+  @keyframes fall{
+    100%{
+      transform: translateY(100vh) rotateX(360deg);
+    }
+  }
